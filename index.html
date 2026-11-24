@@ -1,0 +1,1253 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>eeuss在线影院 - 高清正版视频品牌官网,品质观影内容生态</title>
+<meta name="description" content="eeuss在线影院官方网站，专注高清正版视频内容的企业级观影平台，深耕剧情、纪录与原创影像领域，为创作者与观众构建值得信赖的内容生态。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230b1020'/%3E%3Cpath d='M24 18l22 14-22 14z' fill='%235eead4'/%3E%3C/svg%3E">
+<style>
+:root{
+  --ee-bg:#0b1020;
+  --ee-bg2:#101830;
+  --ee-panel:#141d36;
+  --ee-line:rgba(140,170,220,.18);
+  --ee-text:#e8eefc;
+  --ee-dim:#93a2c4;
+  --ee-mint:#5eead4;
+  --ee-blue:#5b9bff;
+  --ee-pink:#ff7ab8;
+  --ee-radius:16px;
+  --ee-stick:128px;
+}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;scroll-padding-top:var(--ee-stick);}
+body{
+  margin:0;
+  background:
+    radial-gradient(1200px 600px at 85% -10%, rgba(91,155,255,.16), transparent 60%),
+    radial-gradient(900px 500px at 0% 10%, rgba(94,234,212,.10), transparent 55%),
+    var(--ee-bg);
+  color:var(--ee-text);
+  font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,-apple-system,sans-serif;
+  line-height:1.75;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block;}
+a{color:inherit;text-decoration:none;}
+h1,h2,h3,h4{line-height:1.35;margin:0 0 .6em;}
+p{margin:0 0 1em;}
+ul,ol{margin:0 0 1em;padding-left:1.2em;}
+
+.ee-wrap{width:min(1180px,calc(100% - 40px));margin:0 auto;}
+
+/* ---------- 吸顶区 ---------- */
+.ee-sticky{position:sticky;top:0;z-index:60;}
+.ee-notice{
+  background:linear-gradient(90deg,#0f2a4a,#123a52 45%,#0e2a3e);
+  border-bottom:1px solid rgba(94,234,212,.22);
+  font-size:13px;
+  color:#bfe9e2;
+}
+.ee-notice .ee-wrap{display:flex;align-items:center;gap:12px;padding:8px 0;flex-wrap:wrap;}
+.ee-notice-tag{
+  flex:0 0 auto;background:var(--ee-mint);color:#062b26;font-weight:700;
+  font-size:11px;letter-spacing:.08em;padding:2px 8px;border-radius:999px;
+}
+.ee-notice-list{display:flex;gap:22px;flex-wrap:wrap;margin:0;padding:0;list-style:none;}
+.ee-notice-list li{white-space:nowrap;}
+.ee-notice-list a{border-bottom:1px dashed rgba(191,233,226,.4);}
+.ee-notice-list a:hover{color:#fff;border-bottom-color:var(--ee-mint);}
+
+.ee-header{
+  background:rgba(11,16,32,.92);
+  backdrop-filter:blur(14px);
+  border-bottom:1px solid var(--ee-line);
+}
+.ee-header .ee-wrap{display:flex;align-items:center;gap:20px;padding:12px 0;}
+.ee-brand{display:flex;align-items:center;gap:10px;flex:0 0 auto;}
+.ee-brand-mark{
+  width:38px;height:38px;border-radius:11px;flex:0 0 auto;
+  background:linear-gradient(135deg,var(--ee-mint),var(--ee-blue));
+  display:grid;place-items:center;
+  box-shadow:0 0 22px rgba(94,234,212,.35);
+}
+.ee-brand-mark svg{width:18px;height:18px;}
+.ee-brand-name{font-size:17px;font-weight:800;letter-spacing:.01em;}
+.ee-brand-name em{font-style:normal;color:var(--ee-mint);}
+.ee-brand-sub{font-size:10px;letter-spacing:.22em;color:var(--ee-dim);text-transform:uppercase;}
+
+.ee-nav{display:flex;gap:4px;margin-left:auto;flex-wrap:wrap;}
+.ee-nav a{
+  padding:7px 12px;border-radius:9px;font-size:14px;color:var(--ee-dim);
+  transition:.2s;white-space:nowrap;
+}
+.ee-nav a:hover{color:var(--ee-text);background:rgba(94,234,212,.10);}
+.ee-nav a.ee-on{color:#062b26;background:var(--ee-mint);font-weight:700;}
+
+.ee-search{position:relative;flex:0 0 210px;}
+.ee-search input{
+  width:100%;padding:9px 12px 9px 34px;border-radius:10px;
+  border:1px solid var(--ee-line);background:rgba(255,255,255,.04);
+  color:var(--ee-text);font-size:13.5px;font-family:inherit;outline:none;
+  transition:.2s;
+}
+.ee-search input::placeholder{color:#6f7f9e;}
+.ee-search input:focus{border-color:var(--ee-mint);background:rgba(94,234,212,.07);box-shadow:0 0 0 3px rgba(94,234,212,.14);}
+.ee-search::before{
+  content:"";position:absolute;left:12px;top:50%;width:12px;height:12px;
+  transform:translateY(-50%);
+  border:2px solid #7f8fb0;border-radius:50%;
+}
+.ee-search-tip{
+  position:absolute;top:calc(100% + 8px);left:0;right:0;
+  background:var(--ee-panel);border:1px solid var(--ee-line);border-radius:12px;
+  padding:10px;font-size:13px;color:var(--ee-dim);
+  display:none;z-index:70;box-shadow:0 18px 40px rgba(0,0,0,.5);
+}
+.ee-search-tip.ee-show{display:block;}
+
+.ee-burger{
+  display:none;margin-left:auto;width:42px;height:38px;border-radius:10px;
+  border:1px solid var(--ee-line);background:rgba(255,255,255,.04);
+  color:var(--ee-text);font-size:18px;cursor:pointer;
+}
+
+/* ---------- 通用区块 ---------- */
+.ee-sec{padding:64px 0;scroll-margin-top:var(--ee-stick);}
+.ee-sec:nth-of-type(even){background:linear-gradient(180deg,rgba(20,29,54,.42),rgba(11,16,32,0));}
+.ee-eyebrow{
+  display:inline-flex;align-items:center;gap:8px;
+  font-size:11.5px;letter-spacing:.22em;color:var(--ee-mint);
+  text-transform:uppercase;margin-bottom:12px;font-weight:700;
+}
+.ee-eyebrow::before{content:"";width:22px;height:1px;background:var(--ee-mint);}
+.ee-h2{font-size:clamp(22px,3vw,31px);letter-spacing:.01em;}
+.ee-h2 span{color:var(--ee-mint);}
+.ee-lead{color:var(--ee-dim);max-width:70ch;font-size:15px;}
+.ee-h3{font-size:17px;margin-bottom:.5em;}
+
+/* ---------- HERO 全幅主视觉 ---------- */
+.ee-hero{
+  position:relative;overflow:hidden;
+  border-bottom:1px solid var(--ee-line);
+  background:
+    radial-gradient(700px 420px at 78% 20%, rgba(255,122,184,.14), transparent 65%),
+    radial-gradient(800px 500px at 20% 90%, rgba(94,234,212,.13), transparent 60%),
+    linear-gradient(180deg,#0c1428,#0b1020);
+}
+.ee-hero-inner{
+  position:relative;z-index:2;
+  display:grid;grid-template-columns:minmax(0,1fr);gap:28px;
+  padding:56px 0 60px;
+}
+.ee-hero-badge{
+  display:inline-flex;align-items:center;gap:9px;
+  font-size:12.5px;color:var(--ee-mint);font-weight:700;letter-spacing:.12em;
+  border:1px solid rgba(94,234,212,.35);border-radius:999px;padding:5px 14px;
+  background:rgba(94,234,212,.07);width:max-content;margin-bottom:18px;
+}
+.ee-hero-badge i{width:7px;height:7px;border-radius:50%;background:var(--ee-mint);box-shadow:0 0 10px var(--ee-mint);}
+.ee-hero h1{
+  font-size:clamp(34px,6.4vw,68px);letter-spacing:-.015em;margin-bottom:16px;
+  background:linear-gradient(96deg,#ffffff 20%,#a9f3e6 55%,#8fb8ff 90%);
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.ee-hero-slogan{font-size:clamp(15px,1.7vw,19px);color:#c6d3ec;margin-bottom:16px;font-weight:600;}
+.ee-hero-desc{color:var(--ee-dim);max-width:62ch;font-size:14.5px;margin-bottom:24px;}
+.ee-cta{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:30px;}
+.ee-btn{
+  display:inline-flex;align-items:center;gap:8px;
+  padding:11px 22px;border-radius:11px;font-size:14.5px;font-weight:700;
+  border:1px solid transparent;cursor:pointer;font-family:inherit;transition:.2s;
+}
+.ee-btn-main{background:var(--ee-mint);color:#062b26;box-shadow:0 8px 26px rgba(94,234,212,.26);}
+.ee-btn-main:hover{transform:translateY(-2px);box-shadow:0 12px 34px rgba(94,234,212,.4);}
+.ee-btn-ghost{background:rgba(255,255,255,.05);color:var(--ee-text);border-color:var(--ee-line);}
+.ee-btn-ghost:hover{border-color:var(--ee-mint);color:var(--ee-mint);}
+
+.ee-hero-stats{
+  display:grid;grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:14px;border-top:1px solid var(--ee-line);padding-top:22px;max-width:620px;
+}
+.ee-hero-stats div b{display:block;font-size:clamp(20px,2.6vw,27px);color:var(--ee-text);letter-spacing:-.02em;}
+.ee-hero-stats div span{font-size:12.5px;color:var(--ee-dim);}
+
+.ee-hero-visual{position:relative;border-radius:20px;overflow:hidden;border:1px solid var(--ee-line);box-shadow:0 30px 70px rgba(0,0,0,.55);}
+.ee-hero-visual svg{width:100%;height:auto;display:block;}
+.ee-hero-visual figcaption{
+  position:absolute;left:16px;right:16px;bottom:14px;
+  display:flex;justify-content:space-between;align-items:center;gap:10px;
+  font-size:12.5px;color:#d7e2f8;background:rgba(6,10,22,.62);
+  border:1px solid rgba(180,205,245,.18);border-radius:10px;padding:8px 12px;
+  backdrop-filter:blur(6px);
+}
+
+/* ---------- 通用卡片 ---------- */
+.ee-card{
+  background:linear-gradient(180deg,rgba(24,34,62,.85),rgba(16,24,44,.85));
+  border:1px solid var(--ee-line);border-radius:var(--ee-radius);
+  padding:22px;transition:.25s;
+}
+.ee-card:hover{border-color:rgba(94,234,212,.42);transform:translateY(-3px);box-shadow:0 16px 40px rgba(0,0,0,.4);}
+.ee-tag{
+  display:inline-block;font-size:11.5px;color:var(--ee-mint);
+  background:rgba(94,234,212,.1);border:1px solid rgba(94,234,212,.24);
+  border-radius:999px;padding:2px 10px;margin:0 6px 6px 0;
+}
+.ee-meta{font-size:12.5px;color:var(--ee-dim);display:flex;gap:14px;flex-wrap:wrap;align-items:center;}
+
+/* ---------- 视频区：三列等高卡片 ---------- */
+.ee-grid-3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;}
+.ee-grid-2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;}
+.ee-vcard{display:flex;flex-direction:column;gap:12px;height:100%;}
+.ee-vcard figure{margin:0;border-radius:12px;overflow:hidden;border:1px solid var(--ee-line);aspect-ratio:16/9;background:#0a1navy;}
+.ee-vcard figure svg{width:100%;height:100%;display:block;object-fit:cover;}
+.ee-vcard h3{font-size:15.5px;margin:0;}
+.ee-vcard p{font-size:13.5px;color:var(--ee-dim);margin:0;}
+.ee-vcard .ee-tags{display:flex;flex-wrap:wrap;}
+.ee-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:auto;padding-top:6px;}
+.ee-mini{
+  font-size:12.5px;padding:5px 11px;border-radius:8px;cursor:pointer;
+  border:1px solid var(--ee-line);background:rgba(255,255,255,.04);color:var(--ee-dim);
+  font-family:inherit;transition:.18s;display:inline-flex;align-items:center;gap:5px;
+}
+.ee-mini:hover{color:var(--ee-mint);border-color:rgba(94,234,212,.5);}
+.ee-mini.ee-liked{color:var(--ee-pink);border-color:rgba(255,122,184,.55);background:rgba(255,122,184,.1);}
+.ee-mini.ee-saved{color:var(--ee-mint);border-color:rgba(94,234,212,.55);background:rgba(94,234,212,.12);}
+
+/* 单列图文列表 */
+.ee-list{list-style:none;margin:0;padding:0;display:grid;gap:14px;}
+.ee-list-item{
+  display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;align-items:start;
+  background:rgba(20,29,54,.55);border:1px solid var(--ee-line);
+  border-radius:14px;padding:18px 20px;transition:.2s;
+}
+.ee-list-item:hover{border-color:rgba(91,155,255,.45);background:rgba(24,35,64,.8);}
+.ee-list-item h3{font-size:15.5px;margin:0 0 4px;}
+.ee-list-item p{font-size:13.5px;color:var(--ee-dim);margin:0 0 8px;}
+.ee-num{
+  font-size:22px;font-weight:800;color:rgba(94,234,212,.55);
+  font-variant-numeric:tabular-nums;line-height:1;
+}
+
+/* ---------- 专题 ---------- */
+.ee-topic{padding:20px;border-left:3px solid var(--ee-blue);background:rgba(91,155,255,.06);border-radius:0 14px 14px 0;margin-bottom:16px;}
+.ee-topic h3{font-size:16.5px;}
+.ee-topic ul{list-style:none;padding:0;margin:10px 0 0;}
+.ee-topic li{font-size:13.5px;color:var(--ee-dim);padding:6px 0 6px 16px;position:relative;border-bottom:1px dashed rgba(140,170,220,.13);}
+.ee-topic li:last-child{border-bottom:0;}
+.ee-topic li::before{content:"▸";position:absolute;left:0;color:var(--ee-mint);}
+.ee-status{font-size:11.5px;border-radius:999px;padding:2px 10px;background:rgba(94,234,212,.12);color:var(--ee-mint);border:1px solid rgba(94,234,212,.3);}
+
+/* ---------- 深度解析（关键词长文） ---------- */
+.ee-longform{max-width:80ch;}
+.ee-longform h3{font-size:17.5px;margin-top:1.3em;color:#dbe6fb;}
+.ee-longform p{color:#becbE4;color:#bfcbe2;font-size:14.6px;}
+.ee-longform strong{color:var(--ee-mint);}
+.ee-pull{
+  border-left:3px solid var(--ee-pink);background:rgba(255,122,184,.07);
+  padding:14px 18px;border-radius:0 12px 12px 0;margin:20px 0;color:#f0d9e6;font-size:14px;
+}
+
+/* ---------- 作者矩阵 双列简介 ---------- */
+.ee-authors{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;}
+.ee-author{display:flex;gap:14px;align-items:flex-start;}
+.ee-avatar{
+  width:56px;height:56px;border-radius:16px;flex:0 0 auto;
+  display:grid;place-items:center;font-weight:800;font-size:19px;color:#062b26;
+  cursor:pointer;transition:.2s;
+}
+.ee-avatar:hover{transform:scale(1.06) rotate(-3deg);}
+.ee-author b{font-size:15px;display:block;}
+.ee-author .ee-meta{margin:3px 0 8px;}
+.ee-author p{font-size:13.5px;color:var(--ee-dim);margin:0;}
+
+/* ---------- 评价 短评列表 ---------- */
+.ee-reviews{display:grid;gap:12px;}
+.ee-review{
+  background:rgba(20,29,54,.6);border:1px solid var(--ee-line);
+  border-radius:12px;padding:15px 18px;font-size:13.8px;color:#c3cfe6;
+}
+.ee-review header{display:flex;justify-content:space-between;gap:12px;margin-bottom:6px;font-size:12.5px;color:var(--ee-dim);}
+.ee-review header b{color:var(--ee-text);font-size:13px;}
+.ee-stars{color:var(--ee-mint);letter-spacing:2px;}
+
+/* ---------- 动态 / FAQ / 合作 ---------- */
+.ee-news{list-style:none;padding:0;margin:0;display:grid;gap:12px;}
+.ee-news li{display:grid;grid-template-columns:auto minmax(0,1fr);gap:14px;align-items:start;padding:12px 0;border-bottom:1px dashed rgba(140,170,220,.15);}
+.ee-news time{font-size:12.5px;color:var(--ee-mint);white-space:nowrap;font-variant-numeric:tabular-nums;}
+.ee-news b{font-size:14.4px;display:block;margin-bottom:2px;}
+.ee-news span{font-size:13.2px;color:var(--ee-dim);}
+
+.ee-faq details{
+  border:1px solid var(--ee-line);border-radius:12px;margin-bottom:10px;
+  background:rgba(20,29,54,.5);overflow:hidden;
+}
+.ee-faq summary{
+  cursor:pointer;padding:14px 18px;font-size:14.5px;font-weight:600;
+  list-style:none;display:flex;justify-content:space-between;gap:12px;align-items:center;
+}
+.ee-faq summary::-webkit-details-marker{display:none;}
+.ee-faq summary::after{content:"+";color:var(--ee-mint);font-size:19px;font-weight:400;transition:.2s;}
+.ee-faq details[open] summary::after{transform:rotate(45deg);}
+.ee-faq details p{padding:0 18px 14px;margin:0;font-size:13.6px;color:var(--ee-dim);}
+
+.ee-partners{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;}
+.ee-partner{
+  border:1px solid var(--ee-line);border-radius:12px;padding:18px 14px;text-align:center;
+  font-size:13.5px;color:var(--ee-dim);background:rgba(20,29,54,.4);transition:.2s;
+}
+.ee-partner b{display:block;color:var(--ee-text);font-size:15px;margin-bottom:3px;}
+.ee-partner:hover{border-color:rgba(94,234,212,.4);color:var(--ee-text);}
+
+/* ---------- 投稿 ---------- */
+.ee-submit-row{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:20px;align-items:center;}
+.ee-submit-box{
+  background:linear-gradient(120deg,rgba(94,234,212,.14),rgba(91,155,255,.1));
+  border:1px solid rgba(94,234,212,.3);border-radius:18px;padding:26px;
+}
+.ee-submit-box h3{margin-top:0;}
+
+/* ---------- 页脚 ---------- */
+.ee-footer{
+  border-top:1px solid var(--ee-line);background:linear-gradient(180deg,#0a0f1e,#070b15);
+  padding:46px 0 26px;margin-top:20px;
+}
+.ee-footer-grid{display:grid;grid-template-columns:minmax(0,1.5fr) repeat(3,minmax(0,1fr));gap:28px;margin-bottom:30px;}
+.ee-footer h4{font-size:13px;letter-spacing:.14em;color:var(--ee-mint);text-transform:uppercase;margin-bottom:12px;}
+.ee-footer ul{list-style:none;padding:0;margin:0;}
+.ee-footer li{font-size:13.4px;color:var(--ee-dim);padding:4px 0;}
+.ee-footer li a:hover{color:var(--ee-mint);}
+.ee-footer p{font-size:13.2px;color:var(--ee-dim);}
+.ee-footer-bottom{
+  border-top:1px solid var(--ee-line);padding-top:18px;
+  display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;
+  font-size:12.6px;color:#7a89a8;
+}
+
+/* ---------- 弹窗 / Toast ---------- */
+.ee-modal{
+  position:fixed;inset:0;z-index:200;display:none;
+  align-items:center;justify-content:center;padding:20px;
+  background:rgba(4,7,15,.78);backdrop-filter:blur(4px);
+}
+.ee-modal.ee-show{display:flex;}
+.ee-modal-box{
+  width:min(520px,100%);background:var(--ee-panel);border:1px solid var(--ee-line);
+  border-radius:18px;padding:26px;box-shadow:0 30px 80px rgba(0,0,0,.7);
+  max-height:86vh;overflow:auto;
+}
+.ee-modal-box h3{margin-top:0;}
+.ee-modal-box p{font-size:13.8px;color:var(--ee-dim);}
+.ee-modal-close{
+  float:right;border:0;background:rgba(255,255,255,.06);color:var(--ee-text);
+  width:30px;height:30px;border-radius:8px;cursor:pointer;font-size:16px;
+}
+.ee-toast{
+  position:fixed;left:50%;bottom:34px;transform:translate(-50%,20px);
+  background:var(--ee-mint);color:#062b26;font-weight:700;font-size:13.5px;
+  padding:11px 22px;border-radius:11px;z-index:300;opacity:0;pointer-events:none;
+  transition:.28s;box-shadow:0 14px 40px rgba(0,0,0,.5);
+}
+.ee-toast.ee-show{opacity:1;transform:translate(-50%,0);}
+
+.ee-top{
+  position:fixed;right:20px;bottom:24px;width:44px;height:44px;border-radius:12px;
+  border:1px solid var(--ee-line);background:rgba(20,29,54,.9);color:var(--ee-mint);
+  font-size:18px;cursor:pointer;display:none;z-index:120;
+}
+.ee-top.ee-show{display:block;}
+
+/* ---------- 响应式 ---------- */
+@media (max-width:980px){
+  .ee-grid-3{grid-template-columns:repeat(2,minmax(0,1fr));}
+  .ee-partners{grid-template-columns:repeat(2,minmax(0,1fr));}
+  .ee-footer-grid{grid-template-columns:repeat(2,minmax(0,1fr));}
+  .ee-submit-row{grid-template-columns:minmax(0,1fr);}
+}
+@media (max-width:760px){
+  :root{--ee-stick:150px;}
+  .ee-burger{display:block;}
+  .ee-search{order:3;flex:1 1 100%;}
+  .ee-nav{
+    order:4;flex:1 1 100%;display:none;flex-direction:column;gap:2px;
+    padding:10px 0 4px;border-top:1px solid var(--ee-line);margin-left:0;
+  }
+  .ee-nav.ee-open{display:flex;}
+  .ee-nav a{padding:10px 12px;}
+  .ee-grid-3,.ee-grid-2,.ee-authors{grid-template-columns:minmax(0,1fr);}
+  .ee-list-item{grid-template-columns:minmax(0,1fr);}
+  .ee-sec{padding:46px 0;}
+  .ee-hero-stats{grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;}
+}
+@media (prefers-reduced-motion:reduce){
+  *{transition:none!important;animation:none!important;}
+  html{scroll-behavior:auto;}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<div class="ee-sticky">
+  <div class="ee-notice" id="ee-notice">
+    <div class="ee-wrap">
+      <span class="ee-notice-tag">官方发布</span>
+      <ul class="ee-notice-list">
+        <li><a href="#ee-videos">11 月「城市夜行」纪录专题上线，新增 6 部 4K 正片</a></li>
+        <li><a href="#ee-topics">创作者扶持计划第三期开放报名</a></li>
+        <li><a href="#ee-news">播放器 3.2 版更新：支持分集连播与收藏夹同步</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <header class="ee-header">
+    <div class="ee-wrap">
+      <a class="ee-brand" href="#ee-top">
+        <span class="ee-brand-mark">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5l12 7-12 7z" fill="#062b26"/></svg>
+        </span>
+        <span>
+          <span class="ee-brand-name">eeuss<em>在线影院</em></span>
+          <span class="ee-brand-sub">Official Video Portal</span>
+        </span>
+      </a>
+
+      <button class="ee-burger" id="ee-burger" aria-label="展开导航" aria-expanded="false">☰</button>
+
+      <nav class="ee-nav" id="ee-nav" aria-label="主导航">
+        <a class="ee-on" href="#ee-top">首页</a>
+        <a href="#ee-videos">片库</a>
+        <a href="#ee-topics">专题企划</a>
+        <a href="#ee-authors">创作者</a>
+        <a href="#ee-reviews">口碑评价</a>
+        <a href="#ee-news">企业动态</a>
+        <a href="#ee-faq">帮助</a>
+      </nav>
+
+      <div class="ee-search">
+        <input type="search" id="ee-search-input" placeholder="搜索影片、专题、创作者" aria-label="站内搜索">
+        <div class="ee-search-tip" id="ee-search-tip"></div>
+      </div>
+    </div>
+  </header>
+</div>
+
+<main id="ee-top">
+
+  <!-- ============ 首屏：全幅主视觉背景与浮动文字 ============ -->
+  <section class="ee-hero" aria-label="品牌首屏">
+    <div class="ee-wrap ee-hero-inner">
+      <div>
+        <span class="ee-hero-badge"><i></i>官方网站 · 高清正版 · 企业级运营</span>
+        <h1>eeuss在线影院</h1>
+        <p class="ee-hero-slogan">把每一部好片，放在它值得被看见的地方。</p>
+        <p class="ee-hero-desc">
+          作为深耕影视内容垂直领域的视频品牌，eeuss在线影院致力于为正版高清影像搭建稳定、清晰、值得信赖的观看与创作环境。从剧情长片到纪录影像，从行业观察到创作者幕后，我们以品质为底线，以社区为土壤，持续运营一个多元而包容的内容生态。
+        </p>
+        <div class="ee-cta">
+          <a class="ee-btn ee-btn-main" href="#ee-videos">进入片库 ▸</a>
+          <a class="ee-btn ee-btn-ghost" href="#ee-topics">查看专题企划</a>
+          <button class="ee-btn ee-btn-ghost" id="ee-submit-open" type="button">创作者投稿</button>
+        </div>
+        <div class="ee-hero-stats">
+          <div><b>12,800+</b><span>正版高清片目</span></div>
+          <div><b>4,300 位</b><span>签约与入驻创作者</span></div>
+          <div><b>9 年</b><span>持续运营的影像社区</span></div>
+        </div>
+      </div>
+
+      <figure class="ee-hero-visual">
+        <svg viewBox="0 0 1000 560" role="img" aria-label="eeuss在线影院首屏主视觉：夜晚城市天际线与影院银幕光影交叠">
+          <defs>
+            <linearGradient id="eeG1" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#12224a"/><stop offset="1" stop-color="#0a1024"/>
+            </linearGradient>
+            <linearGradient id="eeG2" x1="0" y1="1" x2="1" y2="0">
+              <stop offset="0" stop-color="#5eead4"/><stop offset="1" stop-color="#5b9bff"/>
+            </linearGradient>
+            <linearGradient id="eeG3" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#ff7ab8" stop-opacity=".85"/><stop offset="1" stop-color="#ff7ab8" stop-opacity="0"/>
+            </linearGradient>
+          </defs>
+          <rect width="1000" height="560" fill="url(#eeG1)"/>
+          <circle cx="812" cy="120" r="128" fill="#5b9bff" opacity=".13"/>
+          <circle cx="812" cy="120" r="76" fill="#5eead4" opacity=".12"/>
+          <g opacity=".55" fill="#1c2e57">
+            <rect x="40" y="300" width="70" height="220"/><rect x="124" y="248" width="54" height="272"/>
+            <rect x="192" y="330" width="86" height="190"/><rect x="292" y="276" width="62" height="244"/>
+            <rect x="368" y="346" width="96" height="174"/><rect x="478" y="298" width="58" height="222"/>
+            <rect x="550" y="236" width="74" height="284"/><rect x="638" y="322" width="88" height="198"/>
+            <rect x="740" y="272" width="60" height="248"/><rect x="814" y="336" width="104" height="184"/>
+            <rect x="930" y="290" width="46" height="230"/>
+          </g>
+          <g fill="#5eead4" opacity=".5">
+            <rect x="60" y="330" width="8" height="8"/><rect x="84" y="368" width="8" height="8"/>
+            <rect x="140" y="286" width="8" height="8"/><rect x="210" y="366" width="8" height="8"/>
+            <rect x="306" y="310" width="8" height="8"/><rect x="392" y="384" width="8" height="8"/>
+            <rect x="496" y="336" width="8" height="8"/><rect x="570" y="276" width="8" height="8"/>
+            <rect x="660" y="362" width="8" height="8"/><rect x="760" y="312" width="8" height="8"/>
+            <rect x="844" y="378" width="8" height="8"/><rect x="948" y="332" width="8" height="8"/>
+          </g>
+          <rect x="150" y="70" width="700" height="212" rx="12" fill="#060b18" stroke="#2c4272"/>
+          <rect x="166" y="86" width="668" height="180" rx="6" fill="url(#eeG2)" opacity=".22"/>
+          <path d="M420 138l92 48-92 48z" fill="#5eead4" opacity=".92"/>
+          <rect x="150" y="292" width="700" height="6" rx="3" fill="#2c4272"/>
+          <rect x="330" y="470" width="340" height="10" rx="5" fill="#16264a"/>
+          <rect x="300" y="492" width="400" height="8" rx="4" fill="#122045"/>
+          <path d="M0 520 L1000 470 L1000 560 L0 560 Z" fill="#070c1a" opacity=".8"/>
+          <rect x="700" y="30" width="220" height="72" rx="8" fill="url(#eeG3)" opacity=".28"/>
+        </svg>
+        <figcaption>
+          <span>正在热映 ·《夜行线》纪录特辑</span>
+          <span>4K 高清 / 60 帧</span>
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ============ 焦点内容 + 视频流（三列等高卡片） ============ -->
+  <section class="ee-sec" id="ee-videos">
+    <div class="ee-wrap">
+      <p class="ee-eyebrow">Focus &amp; Library</p>
+      <h2 class="ee-h2">片库焦点：<span>eeuss在线影院</span>本周精选与热门条目</h2>
+      <p class="ee-lead">编辑团队与算法共同筛选的高品质内容。所有片目均为正版授权、高清呈现，观众可直接在线播放或加入收藏夹继续观看。</p>
+
+      <div class="ee-grid-3" style="margin-top:26px">
+
+        <article class="ee-card ee-vcard">
+          <figure>
+            <svg viewBox="0 0 640 360" role="img" aria-label="纪录长片《夜行线：城市十一点的第六种光》封面，霓虹街道与单车剪影">
+              <defs><linearGradient id="eeV1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0d1c3c"/><stop offset="1" stop-color="#241733"/></linearGradient></defs>
+              <rect width="640" height="360" fill="url(#eeV1)"/>
+              <g stroke="#2b3f6b" stroke-width="1.2" opacity=".7">
+                <path d="M0 250 L640 210"/><path d="M0 290 L640 250"/><path d="M0 330 L640 290"/>
+              </g>
+              <circle cx="520" cy="96" r="46" fill="#ff7ab8" opacity=".55"/>
+              <circle cx="520" cy="96" r="76" fill="none" stroke="#ff7ab8" stroke-opacity=".35"/>
+              <rect x="60" y="120" width="120" height="180" rx="6" fill="#132347"/>
+              <rect x="200" y="90" width="86" height="210" rx="6" fill="#16294f"/>
+              <circle cx="330" cy="268" r="26" fill="none" stroke="#5eead4" stroke-width="4"/>
+              <circle cx="410" cy="268" r="26" fill="none" stroke="#5eead4" stroke-width="4"/>
+              <path d="M330 268 L366 214 L410 268 M366 214 L352 190" stroke="#5eead4" stroke-width="4" fill="none"/>
+              <rect x="0" y="316" width="640" height="44" fill="#060b18" opacity=".8"/>
+              <text x="24" y="344" font-size="17" fill="#9fb4d8" font-family="sans-serif">EP.06 / 城市夜行纪录</text>
+            </svg>
+          </figure>
+          <h3>《夜行线：城市十一点的第六种光》</h3>
+          <p>跟拍四位深夜工作者——代驾、便利店员、剪辑师与环卫工，用 40 分钟呈现一座城市不被白天看见的呼吸节奏。</p>
+          <div class="ee-tags"><span class="ee-tag">纪录影像</span><span class="ee-tag">城市探索</span><span class="ee-tag">4K</span></div>
+          <div class="ee-meta"><span>导演：林砚舟</span><span>播放 86.4 万</span><span>收藏 2.1 万</span></div>
+          <div class="ee-actions">
+            <button class="ee-mini ee-like" type="button">♡ <span data-count="12408">12,408</span></button>
+            <button class="ee-mini ee-save" type="button">收藏</button>
+            <button class="ee-mini ee-share" type="button">分享</button>
+          </div>
+        </article>
+
+        <article class="ee-card ee-vcard">
+          <figure>
+            <svg viewBox="0 0 640 360" role="img" aria-label="剧情短片《回声练习》封面，两个人物剪影与声波同心圆">
+              <defs><linearGradient id="eeV2" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#101f3f"/><stop offset="1" stop-color="#13324a"/></linearGradient></defs>
+              <rect width="640" height="360" fill="url(#eeV2)"/>
+              <g fill="none" stroke="#5eead4" stroke-opacity=".45" stroke-width="2">
+                <circle cx="320" cy="180" r="60"/><circle cx="320" cy="180" r="92"/><circle cx="320" cy="180" r="124"/><circle cx="320" cy="180" r="156"/>
+              </g>
+              <g fill="#0b1730">
+                <ellipse cx="238" cy="252" rx="54" ry="76"/>
+                <ellipse cx="406" cy="252" rx="48" ry="70"/>
+              </g>
+              <circle cx="238" cy="166" r="26" fill="#0b1730"/>
+              <circle cx="406" cy="172" r="23" fill="#0b1730"/>
+              <path d="M0 320 H640 V360 H0 Z" fill="#060b18" opacity=".85"/>
+              <text x="24" y="345" font-size="17" fill="#9fb4d8" font-family="sans-serif">剧情短片 / 28 min</text>
+            </svg>
+          </figure>
+          <h3>《回声练习》</h3>
+          <p>一对久未谋面的兄妹在旧剧场重逢，用一段即兴对白完成迟到十年的告别。全片一镜到底，声音设计获社区年度提名。</p>
+          <div class="ee-tags"><span class="ee-tag">剧情</span><span class="ee-tag">原创</span><span class="ee-tag">一镜到底</span></div>
+          <div class="ee-meta"><span>导演：苏未迟</span><span>播放 51.2 万</span><span>点赞 3.7 万</span></div>
+          <div class="ee-actions">
+            <button class="ee-mini ee-like" type="button">♡ <span data-count="37025">37,025</span></button>
+            <button class="ee-mini ee-save" type="button">收藏</button>
+            <button class="ee-mini ee-share" type="button">分享</button>
+          </div>
+        </article>
+
+        <article class="ee-card ee-vcard">
+          <figure>
+            <svg viewBox="0 0 640 360" role="img" aria-label="行业观察节目《镜头之后》封面，摄影机轮廓与数据柱状图">
+              <defs><linearGradient id="eeV3" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#122540"/><stop offset="1" stop-color="#0c2c2a"/></linearGradient></defs>
+              <rect width="640" height="360" fill="url(#eeV3)"/>
+              <g fill="#5b9bff" opacity=".3">
+                <rect x="70" y="240" width="34" height="70"/><rect x="120" y="206" width="34" height="104"/>
+                <rect x="170" y="172" width="34" height="138"/><rect x="220" y="132" width="34" height="178"/>
+              </g>
+              <rect x="320" y="96" width="220" height="146" rx="12" fill="#081222" stroke="#2f4a7c"/>
+              <path d="M400 120 L520 168 L400 216 Z" fill="#5eead4" opacity=".85"/>
+              <rect x="320" y="252" width="220" height="10" rx="5" fill="#2f4a7c"/>
+              <circle cx="372" cy="300" r="16" fill="#ff7ab8" opacity=".7"/>
+              <circle cx="424" cy="300" r="16" fill="#5b9bff" opacity=".7"/>
+              <circle cx="476" cy="300" r="16" fill="#5eead4" opacity=".7"/>
+              <text x="24" y="345" font-size="17" fill="#9fb4d8" font-family="sans-serif">行业观察 / 第 12 期</text>
+            </svg>
+          </figure>
+          <h3>《镜头之后》：短片成本结构拆解</h3>
+          <p>三位制片人拆解一部 20 分钟短片的真实预算：摄影、灯光、后期与场地，哪些钱省不得，哪些是行业惯性开支。</p>
+          <div class="ee-tags"><span class="ee-tag">行业观察</span><span class="ee-tag">实用技巧</span><span class="ee-tag">幕后</span></div>
+          <div class="ee-meta"><span>主持：周叙白</span><span>播放 33.9 万</span><span>评论 1,860</span></div>
+          <div class="ee-actions">
+            <button class="ee-mini ee-like" type="button">♡ <span data-count="18642">18,642</span></button>
+            <button class="ee-mini ee-save" type="button">收藏</button>
+            <button class="ee-mini ee-share" type="button">分享</button>
+          </div>
+        </article>
+
+      </div>
+
+      <h3 class="ee-h3" style="margin-top:40px">更多正在被观看的条目</h3>
+      <ul class="ee-list">
+        <li class="ee-list-item">
+          <div>
+            <h3>《三十七度的厨房》第 4 集：一个人也要好好吃饭</h3>
+            <p>美食烹饪与日常记录交叉的生活流作品，本集记录一位独居设计师的七天晚餐，附完整备菜清单与时间表。</p>
+            <div class="ee-tags"><span class="ee-tag">美食烹饪</span><span class="ee-tag">日常记录</span><span class="ee-tag">治愈影像</span></div>
+            <div class="ee-meta" style="margin-top:8px"><span>作者：江小满</span><span>播放 27.6 万</span><span>点赞 1.4 万</span></div>
+          </div>
+          <div style="text-align:center">
+            <div class="ee-num">01</div>
+            <button class="ee-mini ee-like" type="button" style="margin-top:10px">♡ <span data-count="14032">14,032</span></button>
+          </div>
+        </li>
+        <li class="ee-list-item">
+          <div>
+            <h3>《旧物新生》第 9 集：把一把断腿木椅修回 1972 年</h3>
+            <p>手作 DIY 与匠人题材，从拆解、榫卯修复到上蜡，全过程无快进，包含工具清单与常见失败点提示。</p>
+            <div class="ee-tags"><span class="ee-tag">手作 DIY</span><span class="ee-tag">匠心</span><span class="ee-tag">教程干货</span></div>
+            <div class="ee-meta" style="margin-top:8px"><span>作者：木见工房</span><span>播放 19.8 万</span><span>收藏 9,120</span></div>
+          </div>
+          <div style="text-align:center">
+            <div class="ee-num">02</div>
+            <button class="ee-mini ee-like" type="button" style="margin-top:10px">♡ <span data-count="9826">9,826</span></button>
+          </div>
+        </li>
+        <li class="ee-list-item">
+          <div>
+            <h3>《骑行的一百个理由》第 2 集：环湖 82 公里的风与雨</h3>
+            <p>户外活动记录，实拍清晨出发至傍晚收车的完整路线，含补给点、爬升数据与雨天装备建议。</p>
+            <div class="ee-tags"><span class="ee-tag">户外活动</span><span class="ee-tag">旅行见闻</span><span class="ee-tag">高清</span></div>
+            <div class="ee-meta" style="margin-top:8px"><span>作者：陆行舟</span><span>播放 16.3 万</span><span>点赞 8,470</span></div>
+          </div>
+          <div style="text-align:center">
+            <div class="ee-num">03</div>
+            <button class="ee-mini ee-like" type="button" style="margin-top:10px">♡ <span data-count="8470">8,470</span></button>
+          </div>
+        </li>
+        <li class="ee-list-item">
+          <div>
+            <h3>《一平米工作室》第 7 集：在家搭一个能录对白的角落</h3>
+            <p>教程干货类内容，讲解吸音棉布置、麦克风指向与低成本声学处理，附带前后对比录音片段。</p>
+            <div class="ee-tags"><span class="ee-tag">教程干货</span><span class="ee-tag">幕后</span><span class="ee-tag">实用技巧</span></div>
+            <div class="ee-meta" style="margin-top:8px"><span>作者：许声记</span><span>播放 12.4 万</span><span>收藏 6,530</span></div>
+          </div>
+          <div style="text-align:center">
+            <div class="ee-num">04</div>
+            <button class="ee-mini ee-like" type="button" style="margin-top:10px">♡ <span data-count="6531">6,531</span></button>
+          </div>
+        </li>
+        <li class="ee-list-item">
+          <div>
+            <h3>《猫在窗台》第 11 集：十七岁的夏天与最后一罐罐头</h3>
+            <p>萌宠日常与情感故事，记录一只老猫的日常起居与主人的陪伴札记，评论区自发形成互助话题。</p>
+            <div class="ee-tags"><span class="ee-tag">萌宠日常</span><span class="ee-tag">陪伴</span><span class="ee-tag">情感故事</span></div>
+            <div class="ee-meta" style="margin-top:8px"><span>作者：阿栗与小满</span><span>播放 31.5 万</span><span>点赞 2.6 万</span></div>
+          </div>
+          <div style="text-align:center">
+            <div class="ee-num">05</div>
+            <button class="ee-mini ee-like" type="button" style="margin-top:10px">♡ <span data-count="26410">26,410</span></button>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ 专题企划 ============ -->
+  <section class="ee-sec" id="ee-topics">
+    <div class="ee-wrap">
+      <p class="ee-eyebrow">Programs</p>
+      <h2 class="ee-h2"><span>eeuss在线影院</span>专题企划：三条长期更新的内容线</h2>
+      <p class="ee-lead">专题是平台内容生态的骨架。我们以季度为单位策划，邀请创作者共同参与，并持续运营至完整收官，确保每一个企划都有始有终、可回看、可检索。</p>
+
+      <div class="ee-grid-2" style="margin-top:26px">
+        <div>
+          <div class="ee-topic">
+            <div class="ee-meta" style="margin-bottom:6px"><span class="ee-status">更新中 · 第 6 期</span></div>
+            <h3>城市夜行：被忽略的第二时区</h3>
+            <p style="font-size:13.6px;color:var(--ee-dim)">以深夜为切口，记录那些在多数人入睡后仍在运转的职业与空间。企划自 2025 年冬季启动，已连续更新 18 个月。</p>
+            <ul>
+              <li>EP.06《夜行线》：四位深夜工作者的 24 小时</li>
+              <li>EP.05《末班车之后》：地铁收车后的两个小时</li>
+              <li>EP.04《24 小时便利店》：一盏灯的商业逻辑</li>
+            </ul>
+          </div>
+          <div class="ee-topic" style="border-left-color:var(--ee-mint);background:rgba(94,234,212,.06)">
+            <div class="ee-meta" style="margin-bottom:6px"><span class="ee-status">筹备中 · 12 月上线</span></div>
+            <h3>一平米计划：小空间里的大制作</h3>
+            <p style="font-size:13.6px;color:var(--ee-dim)">面向独立创作者的低成本制作企划，鼓励在有限空间与预算中完成完整叙事，优秀作品将获得官方推荐位与制作补贴。</p>
+            <ul>
+              <li>EP.01《一张桌子上的三个场景》</li>
+              <li>EP.02《卧室剧场的照明方案》</li>
+              <li>报名通道已开放，首期录用 20 组</li>
+            </ul>
+          </div>
+        </div>
+
+        <div>
+          <div class="ee-topic" style="border-left-color:var(--ee-pink);background:rgba(255,122,184,.06)">
+            <div class="ee-meta" style="margin-bottom:6px"><span class="ee-status">已收官 · 共 9 期</span></div>
+            <h3>时间的匠人：手艺与手的记忆</h3>
+            <p style="font-size:13.6px;color:var(--ee-dim)">走访木工、陶瓷、修复、裁缝等九位手艺人，以长镜头保留完整工序，探讨技艺在当代商业中的位置。</p>
+            <ul>
+              <li>EP.09《一把椅子的九年》</li>
+              <li>EP.07《补一只缺口碗要几道工序》</li>
+              <li>EP.03《量体与裁片：一件西装的 42 小时》</li>
+            </ul>
+          </div>
+          <figure style="margin:0;border-radius:14px;overflow:hidden;border:1px solid var(--ee-line)">
+            <svg viewBox="0 0 640 320" role="img" aria-label="专题企划视觉：三块并排的影像画格与企划标签">
+              <rect width="640" height="320" fill="#0d1830"/>
+              <g>
+                <rect x="36" y="46" width="176" height="120" rx="8" fill="#16305a"/>
+                <rect x="232" y="46" width="176" height="120" rx="8" fill="#123b3a"/>
+                <rect x="428" y="46" width="176" height="120" rx="8" fill="#3a1630"/>
+                <circle cx="124" cy="106" r="26" fill="#5b9bff" opacity=".7"/>
+                <path d="M300 84 l52 26 -52 26z" fill="#5eead4" opacity=".85"/>
+                <rect x="470" y="80" width="92" height="52" rx="6" fill="#ff7ab8" opacity=".55"/>
+              </g>
+              <g font-family="sans-serif" font-size="15" fill="#9fb4d8">
+                <text x="36" y="212">城市夜行</text>
+                <text x="232" y="212">一平米计划</text>
+                <text x="428" y="212">时间的匠人</text>
+              </g>
+              <g stroke="#26395f"><path d="M36 240 H604"/></g>
+              <text x="36" y="276" font-family="sans-serif" font-size="14" fill="#6f86ad">eeuss 专题企划 / 长期更新中</text>
+            </svg>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 品牌深度解析（关键词长文） ============ -->
+  <section class="ee-sec" id="ee-about">
+    <div class="ee-wrap">
+      <p class="ee-eyebrow">Brand Insight</p>
+      <h2 class="ee-h2">深度解析：<span>eeuss在线影院</span>如何做一家长期主义的视频品牌</h2>
+      <p class="ee-lead">一家视频品牌官网的价值，不在于堆砌片量，而在于它能否让内容被稳定地看见、被认真地讨论、被持续地生产。以下从平台定位、内容生态与运营机制三个层面展开。</p>
+
+      <div class="ee-longform" style="margin-top:20px">
+        <h3>一、平台定位：从播放工具到内容品牌的转变</h3>
+        <p>
+          在视频供给极其充裕的今天，观众面对的问题已经从“看不到”变成了“不知道看什么”。<strong>eeuss在线影院</strong>从建立之初就把自己定位为一家内容品牌，而不是一个单纯的播放容器。我们相信，一家值得信赖的视频品牌官网，应当具备编辑的判断力、版权的确定性、播放的稳定性，以及让观众愿意回访的社区氛围。官网之上，每一条内容都经过编辑标签化与人工复核，确保标题与内容一致、画质与描述一致、作者与署名一致。这种近乎苛刻的一致性，是品牌口碑的基础。
+        </p>
+        <p>
+          因此，平台在架构上被划分为三层：其一是<strong>正版高清片库</strong>，承载剧情长片、纪录影像与自制内容；其二是<strong>创作者社区</strong>，为入驻作者提供发布、数据回看与互动工具；其三是<strong>专题企划层</strong>，以季度为单位组织内容，形成可回看的叙事序列。三层各司其职，又通过统一的搜索与标签体系彼此连接，观众可以在一次浏览中，从一部影片跳转到它的幕后花絮、导演访谈，以及同题材的其他作品。这种连接感，正是内容生态与简单片目列表之间的本质区别。
+        </p>
+
+        <h3>二、内容生态：创作者的成长与陪伴</h3>
+        <p>
+          我们始终把创作者视为平台的核心资产。过去九年，<strong>eeuss在线影院</strong>持续运营着一条从新人到成熟作者的成长路径：新人期提供拍摄补贴与选题指导，成长期提供首页推荐与专题合作，成熟期则进入年度创作者名录，参与平台整体的内容规划。每一位入驻作者都会获得一份内容诊断报告，涵盖完播率、互动结构、观众画像与题材饱和度，帮助作者判断下一条内容应该往哪里走。
+        </p>
+        <p>
+          在题材上，我们坚持多元与包容。既有《三十七度的厨房》这样温热的日常记录，也有《镜头之后》这样偏冷峻的行业观察；既有手作工坊里的慢工细活，也有城市深夜里的快速流动。平台不预设“爆款模板”，因为模板一旦固化，内容的真实感就会被稀释。我们更关心的是：这条内容是否诚实地记录了某件事，是否提供了观众能带走的具体信息，是否在表达上保持了创作者自己的语气。做到这三点，即使播放数字不亮眼，它依然会被我们放进精品内容的推荐池。
+        </p>
+        <div class="ee-pull">
+          “我们衡量一条内容的第二标准是口碑，第一标准是它是否值得被保存三年以上。”——平台内容负责人在 2026 年度创作者大会上的发言摘要
+        </div>
+
+        <h3>三、运营机制：把品质写进流程</h3>
+        <p>
+          品质不是口号，是流程。<strong>eeuss在线影院</strong>将内容运营拆分为选题评审、拍摄支持、成片质检、上线编排与长尾维护五个环节。成片质检环节尤其关键：画质是否达到平台高清标准、声音是否做过基础降噪、字幕是否有错字与断句问题、片头片尾是否完整、版权链路是否清晰——任何一项不达标，内容都不会进入正式推荐位。这套流程看起来笨重，却让平台在用户口碑中长期保持着稳定表现。
+        </p>
+        <p>
+          在社区侧，我们设立了公开的更新日志与反馈通道。每一次播放器版本更新、每一条规则调整，都会在官网企业动态中说明原因与影响范围。用户至上不是一句宣传语，而是意味着当用户反馈“收藏夹同步失败”时，我们会在两周内给出修复版本，并在页面上写明修复内容。正是这些琐碎但可验证的动作，构成了一个视频品牌官网的专业形象与社会责任。
+        </p>
+        <p>
+          面向未来，平台将继续深耕影视内容垂直领域，在原创扶持、纪录片制作与青年导演计划上增加投入。我们希望通过持续的精品内容与规范运营，让<strong>eeuss在线影院</strong>成为用户在需要认真看一部片时，第一个想起的名字。这不仅是一家企业的成长目标，也是我们对这个内容行业的长期承诺。
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 创作者矩阵（双列简介） ============ -->
+  <section class="ee-sec" id="ee-authors">
+    <div class="ee-wrap">
+      <p class="ee-eyebrow">Creators</p>
+      <h2 class="ee-h2">创作者矩阵：<span>eeuss在线影院</span>的六位常驻作者</h2>
+      <p class="ee-lead">他们构成了平台内容生态最真实的部分。点击头像可查看作者档案摘要。</p>
+
+      <div class="ee-authors" style="margin-top:24px">
+
+        <article class="ee-card ee-author">
+          <div class="ee-avatar ee-author-pop" style="background:linear-gradient(135deg,#5eead4,#5b9bff)" data-author="林砚舟">林</div>
+          <div>
+            <b>林砚舟</b>
+            <div class="ee-meta"><span>擅长：纪录影像 / 城市探索</span></div>
+            <div class="ee-meta"><span>作品 42</span><span>粉丝 18.6 万</span></div>
+            <p>纪录片导演，前新闻摄影记者，习惯用长镜头等待一个真实瞬间。近三年专注城市夜间题材，作品节奏克制、信息密度高，被观众称为“会写说明书的导演”。</p>
+          </div>
+        </article>
+
+        <article class="ee-card ee-author">
+          <div class="ee-avatar ee-author-pop" style="background:linear-gradient(135deg,#ff7ab8,#b46bff)" data-author="苏未迟">苏</div>
+          <div>
+            <b>苏未迟</b>
+            <div class="ee-meta"><span>擅长：剧情短片 / 情感故事</span></div>
+            <div class="ee-meta"><span>作品 27</span><span>粉丝 12.3 万</span></div>
+            <p>编剧出身的短片作者，擅长在极简场景里完成情绪转折，偏爱一镜到底与同期声。《回声练习》为其代表作，剧本初稿仅用两页纸，却打磨了整整七个月。</p>
+          </div>
+        </article>
+
+        <article class="ee-card ee-author">
+          <div class="ee-avatar ee-author-pop" style="background:linear-gradient(135deg,#5b9bff,#7fe0c8)" data-author="周叙白">周</div>
+          <div>
+            <b>周叙白</b>
+            <div class="ee-meta"><span>擅长：行业观察 / 幕后访谈</span></div>
+            <div class="ee-meta"><span>作品 58</span><span>粉丝 21.4 万</span></div>
+            <p>制片人兼主持人，做过十年商业广告，如今把镜头对准行业本身。擅长把预算表、通告单这些“不好看”的材料讲成故事，是平台行业观察类内容的主力作者。</p>
+          </div>
+        </article>
+
+        <article class="ee-card ee-author">
+          <div class="ee-avatar ee-author-pop" style="background:linear-gradient(135deg,#ffd166,#ff8a5b)" data-author="江小满">江</div>
+          <div>
+            <b>江小满</b>
+            <div class="ee-meta"><span>擅长：美食烹饪 / 日常记录</span></div>
+            <div class="ee-meta"><span>作品 96</span><span>粉丝 26.8 万</span></div>
+            <p>生活类视频作者，坚持一人一机拍摄，几乎不使用补光。她的内容以“可复现”著称：每道菜都附时间表与失败提示，观众按图操作成功率极高，因此长期位列收藏榜前列。</p>
+          </div>
+        </article>
+
+        <article class="ee-card ee-author">
+          <div class="ee-avatar ee-author-pop" style="background:linear-gradient(135deg,#7fe0c8,#5b9bff)" data-author="木见工房">木</div>
+          <div>
+            <b>木见工房</b>
+            <div class="ee-meta"><span>擅长：手作 DIY / 匠心纪录</span></div>
+            <div class="ee-meta"><span>作品 34</span><span>粉丝 9.7 万</span></div>
+            <p>由两位木工组成的创作组合，坚持全过程无快进。他们的作品被不少职业技术学校用作教学素材，视频下方常出现长篇技术讨论，形成了平台内少见的手艺交流区。</p>
+          </div>
+        </article>
+
+        <article class="ee-card ee-author">
+          <div class="ee-avatar ee-author-pop" style="background:linear-gradient(135deg,#b46bff,#ff7ab8)" data-author="陆行舟">陆</div>
+          <div>
+            <b>陆行舟</b>
+            <div class="ee-meta"><span>擅长：户外活动 / 旅行见闻</span></div>
+            <div class="ee-meta"><span>作品 63</span><span>粉丝 15.2 万</span></div>
+            <p>骑行与徒步爱好者，视频里永远先报路线数据再讲风景。他主张“可复制的旅行”，每条内容都会标注爬升、补给点与最佳季节，是新人户外作者的参考范本。</p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 用户评价（短评列表）+ 企业动态 + 合作墙 ============ -->
+  <section class="ee-sec" id="ee-reviews">
+    <div class="ee-wrap">
+      <p class="ee-eyebrow">Reviews &amp; News</p>
+      <h2 class="ee-h2">口碑与动态：<span>eeuss在线影院</span>被如何评价</h2>
+      <p class="ee-lead">以下评价来自平台观众反馈与社区公开留言，保留了原始语气与长度差异。</p>
+
+      <div class="ee-grid-2" style="margin-top:24px;align-items:start">
+
+        <div class="ee-reviews">
+          <div class="ee-review">
+            <header><b>看片不看广告</b><span class="ee-stars">★★★★★</span></header>
+            画质是真的稳，4K 片目缓冲很快，最难得的是标题和内容对得上，没有被标题党骗过。
+          </div>
+          <div class="ee-review">
+            <header><b>北方有雨</b><span class="ee-stars">★★★★☆</span></header>
+            纪录专题做得比我预期深。《夜行线》看完顺手去看了另外两集，属于那种看完会想给朋友发链接的内容。
+          </div>
+          <div class="ee-review">
+            <header><b>剪辑学徒阿宽</b><span class="ee-stars">★★★★★</span></header>
+            作为学剪辑的，行业观察那几期直接当教材了。预算拆解讲得细，不端着，也没有故意卖课。
+          </div>
+          <div class="ee-review">
+            <header><b>一只橘</b><span>未评分</span></header>
+            希望收藏夹能按专题分组，现在有点混。已经提过反馈了，看到更新日志说在排期里，先等等。
+          </div>
+          <div class="ee-review">
+            <header><b>周末在家</b><span class="ee-stars">★★★★☆</span></header>
+            更新节奏很舒服，不是那种一天推一百条的平台。适合晚上安静看一集，不会焦虑。
+          </div>
+          <div class="ee-review">
+            <header><b>木工老陈</b><span class="ee-stars">★★★★★</span></header>
+            手作区的内容我愿意让徒弟看，工序完整、不省略关键步骤。这一点在现在的短视频平台上很少见了。
+          </div>
+        </div>
+
+        <div>
+          <h3 class="ee-h3" id="ee-news">企业动态 · 官方发布</h3>
+          <ul class="ee-news">
+            <li>
+              <time>2026-11-18</time>
+              <div><b>「城市夜行」纪录专题第 6 期上线</b><span>新增 6 部 4K 正片与 3 篇幕后手记，专题页支持按集连播。</span></div>
+            </li>
+            <li>
+              <time>2026-11-09</time>
+              <div><b>创作者扶持计划第三期开放报名</b><span>面向独立创作者，提供制作补贴、选题指导与官方推荐位，报名截止 12 月 20 日。</span></div>
+            </li>
+            <li>
+              <time>2026-10-27</time>
+              <div><b>播放器 3.2 版本更新</b><span>支持分集连播、收藏夹云端同步与字幕字号调节，修复移动端全屏偶发黑屏问题。</span></div>
+            </li>
+            <li>
+              <time>2026-10-12</time>
+              <div><b>平台内容质检标准公开</b><span>公示画质、声音、字幕与版权四类共 18 项检查细则，接受创作者与用户监督。</span></div>
+            </li>
+          </ul>
+
+          <h3 class="ee-h3" style="margin-top:28px">合作品牌与内容伙伴</h3>
+          <div class="ee-partners">
+            <div class="ee-partner"><b>光年影业</b>剧情片联合出品</div>
+            <div class="ee-partner"><b>慢帧工作室</b>纪录内容合作</div>
+            <div class="ee-partner"><b>青禾影展</b>年度展映伙伴</div>
+            <div class="ee-partner"><b>南岭工坊</b>手艺内容共建</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 投稿 / 联系 + FAQ ============ -->
+  <section class="ee-sec" id="ee-faq">
+    <div class="ee-wrap">
+      <p class="ee-eyebrow">Join &amp; Help</p>
+      <h2 class="ee-h2">加入<span>eeuss在线影院</span>：投稿入口与常见问题</h2>
+
+      <div class="ee-submit-row" style="margin-top:24px">
+        <div class="ee-submit-box">
+          <h3 class="ee-h3">把你拍的东西，交给一个认真对待它的地方</h3>
+          <p style="font-size:14px;color:#c6d3ec">
+            我们长期征集剧情短片、纪录影像、手艺与生活记录类作品。投稿后 7 个工作日内给出初审意见，通过审核的内容将进入平台正版高清片库，并获得编辑推荐、专题合作与创作者扶持计划的优先资格。无论你是第一次上传作品的新人，还是已经在行业里深耕多年的团队，我们都愿意先看内容，再谈合作。
+          </p>
+          <div class="ee-cta" style="margin-bottom:0">
+            <button class="ee-btn ee-btn-main" id="ee-submit-open2" type="button">立即投稿</button>
+            <button class="ee-btn ee-btn-ghost ee-share" type="button">分享本页</button>
+          </div>
+        </div>
+
+        <div class="ee-faq">
+          <details>
+            <summary>平台的内容是正版授权的吗？</summary>
+            <p>是。eeuss在线影院所有上架内容均经过版权链路核查，自制与联合出品内容在片尾标注授权信息，用户可在片目详情页查看来源说明。</p>
+          </details>
+          <details>
+            <summary>投稿有题材限制吗？</summary>
+            <p>不设题材白名单，但要求内容真实、署名清晰、音画达标。涉及他人肖像与场地的素材需提供授权说明，具体可在投稿表单中查阅。</p>
+          </details>
+          <details>
+            <summary>新作者的视频会被推荐吗？</summary>
+            <p>会。平台设有新人推荐池，每周从新上传内容中挑选 10 至 15 条进入首页轮播与专题位，标准是内容完整度与信息价值，而非粉丝量。</p>
+          </details>
+          <details>
+            <summary>收藏和观看记录可以跨设备同步吗？</summary>
+            <p>播放器 3.2 版本起支持收藏夹云端同步，登录同一账号即可在不同设备上继续观看。观看记录保留 180 天，可手动清除。</p>
+          </details>
+          <details>
+            <summary>如何参与专题企划？</summary>
+            <p>在投稿时勾选“希望参与专题企划”，并在说明中注明可执行周期。编辑部会根据当季企划方向与作者擅长领域进行匹配，匹配成功后会单独沟通预算与排期。</p>
+          </details>
+          <details>
+            <summary>发现内容信息有误，怎么反馈？</summary>
+            <p>可在片目页面使用“反馈”入口提交说明，也可通过页脚的联系邮箱发送详细情况。核实后我们会在 5 个工作日内修正并在更新日志中记录。</p>
+          </details>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="ee-footer">
+  <div class="ee-wrap">
+    <div class="ee-footer-grid">
+      <div>
+        <a class="ee-brand" href="#ee-top" style="margin-bottom:14px">
+          <span class="ee-brand-mark">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5l12 7-12 7z" fill="#062b26"/></svg>
+          </span>
+          <span class="ee-brand-name">eeuss<em>在线影院</em></span>
+        </a>
+        <p style="max-width:34ch">eeuss在线影院官方网站，专注正版高清影像的企业级视频平台。深耕影视内容垂直领域，以品质与口碑持续运营开放、多元的内容生态。</p>
+      </div>
+      <div>
+        <h4>内容</h4>
+        <ul>
+          <li><a href="#ee-videos">正版片库</a></li>
+          <li><a href="#ee-topics">专题企划</a></li>
+          <li><a href="#ee-authors">创作者名录</a></li>
+          <li><a href="#ee-about">品牌深度解析</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>关于</h4>
+        <ul>
+          <li><a href="#ee-news">企业动态</a></li>
+          <li><a href="#ee-reviews">用户口碑</a></li>
+          <li><a href="#ee-faq">帮助中心</a></li>
+          <li><a href="#ee-faq">投稿与合作</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>联系</h4>
+        <ul>
+          <li>合作邮箱：partner@eeuss-media.example</li>
+          <li>投稿邮箱：submit@eeuss-media.example</li>
+          <li>工作时间：周一至周五 10:00–19:00</li>
+          <li>内容反馈：官网片目页反馈入口</li>
+        </ul>
+      </div>
+    </div>
+    <div class="ee-footer-bottom">
+      <span>© 2017–2026 eeuss在线影院 官方网站 · 版权所有 · 持续运营中</span>
+      <span>正版授权 · 高清呈现 · 品牌备案号：影备 2026-0118 号</span>
+    </div>
+  </div>
+</footer>
+
+<button class="ee-top" id="ee-top-btn" aria-label="回到顶部">↑</button>
+<div class="ee-toast" id="ee-toast" role="status" aria-live="polite"></div>
+
+<div class="ee-modal" id="ee-modal" role="dialog" aria-modal="true" aria-labelledby="ee-modal-title">
+  <div class="ee-modal-box">
+    <button class="ee-modal-close" id="ee-modal-close" aria-label="关闭">×</button>
+    <h3 id="ee-modal-title">提示</h3>
+    <div id="ee-modal-body"></div>
+  </div>
+</div>
+
+<script>
+(function(){
+  "use strict";
+
+  var toastEl = document.getElementById('ee-toast');
+  var toastTimer = null;
+  function toast(msg){
+    toastEl.textContent = msg;
+    toastEl.classList.add('ee-show');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function(){ toastEl.classList.remove('ee-show'); }, 2200);
+  }
+
+  /* 移动端导航折叠 */
+  var burger = document.getElementById('ee-burger');
+  var nav = document.getElementById('ee-nav');
+  burger.addEventListener('click', function(){
+    var open = nav.classList.toggle('ee-open');
+    burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+    burger.textContent = open ? '✕' : '☰';
+  });
+  nav.addEventListener('click', function(e){
+    if(e.target.tagName === 'A' && window.innerWidth <= 760){
+      nav.classList.remove('ee-open');
+      burger.setAttribute('aria-expanded','false');
+      burger.textContent = '☰';
+    }
+  });
+
+  /* 搜索前端反馈 */
+  var searchInput = document.getElementById('ee-search-input');
+  var searchTip = document.getElementById('ee-search-tip');
+  var searchIndex = [
+    '夜行线：城市十一点的第六种光',
+    '回声练习',
+    '镜头之后：短片成本结构拆解',
+    '三十七度的厨房',
+    '旧物新生',
+    '骑行的一百个理由',
+    '一平米工作室',
+    '猫在窗台',
+    '城市夜行专题',
+    '一平米计划专题',
+    '时间的匠人专题',
+    '创作者扶持计划'
+  ];
+  function runSearch(){
+    var q = searchInput.value.trim();
+    if(!q){
+      searchTip.classList.remove('ee-show');
+      return;
+    }
+    var hits = searchIndex.filter(function(item){
+      return item.toLowerCase().indexOf(q.toLowerCase()) > -1;
+    });
+    if(hits.length === 0){
+      searchTip.innerHTML = '没有直接匹配「' + escapeHtml(q) + '」的条目，可尝试关键词：纪录、剧情、手作、骑行。';
+    }else{
+      searchTip.innerHTML = '找到 ' + hits.length + ' 条相关内容：<br>' + hits.slice(0,5).map(function(h){
+        return '· ' + escapeHtml(h);
+      }).join('<br>');
+    }
+    searchTip.classList.add('ee-show');
+  }
+  function escapeHtml(s){
+    return String(s).replace(/[&<>"']/g, function(c){
+      return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];
+    });
+  }
+  var searchTimer = null;
+  searchInput.addEventListener('input', function(){
+    clearTimeout(searchTimer);
+    searchTimer = setTimeout(runSearch, 220);
+  });
+  searchInput.addEventListener('focus', function(){
+    if(searchInput.value.trim()){ runSearch(); }
+  });
+  document.addEventListener('click', function(e){
+    if(!e.target.closest('.ee-search')){ searchTip.classList.remove('ee-show'); }
+  });
+
+  /* 点赞 / 收藏 */
+  document.addEventListener('click', function(e){
+    var likeBtn = e.target.closest('.ee-like');
+    if(likeBtn){
+      var span = likeBtn.querySelector('[data-count]');
+      if(!span) return;
+      var base = parseInt(span.getAttribute('data-count'), 10) || 0;
+      var liked = likeBtn.classList.toggle('ee-liked');
+      var next = liked ? base + 1 : base;
+      span.setAttribute('data-count', String(next));
+      span.textContent = next.toLocaleString('en-US');
+      likeBtn.firstChild.nodeValue = liked ? '♥ ' : '♡ ';
+      toast(liked ? '已点赞，感谢支持' : '已取消点赞');
+      return;
+    }
+
+    var saveBtn = e.target.closest('.ee-save');
+    if(saveBtn){
+      var saved = saveBtn.classList.toggle('ee-saved');
+      saveBtn.textContent = saved ? '已收藏' : '收藏';
+      toast(saved ? '已加入收藏夹' : '已从收藏夹移除');
+      return;
+    }
+
+    var shareBtn = e.target.closest('.ee-share');
+    if(shareBtn){
+      openModal('分享内容', '<p>把这条内容分享给朋友：</p><p style="display:flex;gap:10px;flex-wrap:wrap">'
+        + '<button class="ee-btn ee-btn-ghost" type="button" data-copy="link">复制链接</button>'
+        + '<button class="ee-btn ee-btn-ghost" type="button" data-share="wechat">微信</button>'
+        + '<button class="ee-btn ee-btn-ghost" type="button" data-share="weibo">微博</button>'
+        + '<button class="ee-btn ee-btn-ghost" type="button" data-share="qq">QQ</button></p>');
+      return;
+    }
+
+    var copyBtn = e.target.closest('[data-copy="link"]');
+    if(copyBtn){
+      var link = 'https://example.invalid/eeuss/share';
+      if(navigator.clipboard && navigator.clipboard.writeText){
+        navigator.clipboard.writeText(link).then(function(){
+          toast('链接已复制到剪贴板');
+        }).catch(function(){
+          toast('复制失败，请手动复制');
+        });
+      }else{
+        toast('当前环境不支持自动复制');
+      }
+      return;
+    }
+
+    var sharePlat = e.target.closest('[data-share]');
+    if(sharePlat){
+      var map = {wechat:'微信', weibo:'微博', qq:'QQ'};
+      var name = map[sharePlat.getAttribute('data-share')] || '平台';
+      closeModal();
+      toast('已生成分享卡片，请到' + name + '中粘贴');
+      return;
+    }
+
+    var pop = e.target.closest('.ee-author-pop');
+    if(pop){
+      var name2 = pop.getAttribute('data-author');
+      var card = pop.closest('.ee-author');
+      var desc = card ? card.querySelector('p').textContent.trim() : '';
+      openModal(name2 + ' · 作者档案', '<p>' + escapeHtml(desc) + '</p><p style="color:#93a2c4">擅长领域与作品数据可在创作者名录中查看，长期接受专题企划合作邀请。</p>');
+      return;
+    }
+  });
+
+  /* 弹窗 */
+  var modal = document.getElementById('ee-modal');
+  var modalTitle = document.getElementById('ee-modal-title');
+  var modalBody = document.getElementById('ee-modal-body');
+  function openModal(title, html){
+    modalTitle.textContent = title;
+    modalBody.innerHTML = html;
+    modal.classList.add('ee-show');
+  }
+  function closeModal(){
+    modal.classList.remove('ee-show');
+  }
+  document.getElementById('ee-modal-close').addEventListener('click', closeModal);
+  modal.addEventListener('click', function(e){
+    if(e.target === modal){ closeModal(); }
+  });
+  document.addEventListener('keydown', function(e){
+    if(e.key === 'Escape'){ closeModal(); }
+  });
+
+  /* 投稿弹窗 */
+  function submitModal(){
+    openModal('创作者投稿入口', ''
+      + '<p>请准备以下材料后在投稿表单中提交：</p>'
+      + '<ul style="font-size:13.8px;color:#93a2c4">'
+      + '<li>作品成片（16:9，不低于 1080p，建议 4K）</li>'
+      + '<li>300 字以内的内容简介与创作说明</li>'
+      + '<li>完整署名信息与素材授权说明</li>'
+      + '<li>可选的幕后素材，用于专题企划展示</li>'
+      + '</ul>'
+      + '<p>初审周期为 7 个工作日，通过后将进入正版高清片库并获得编辑推荐机会。</p>'
+      + '<button class="ee-btn ee-btn-main" type="button" id="ee-submit-fake">提交并接受条款</button>');
+    var fake = document.getElementById('ee-submit-fake');
+    if(fake){
+      fake.addEventListener('click', function(){
+        closeModal();
+        toast('已记录你的投稿意向，请留意邮箱通知');
+      });
+    }
+  }
+  document.getElementById('ee-submit-open').addEventListener('click', submitModal);
+  document.getElementById('ee-submit-open2').addEventListener('click', submitModal);
+
+  /* 回到顶部 */
+  var topBtn = document.getElementById('ee-top-btn');
+  window.addEventListener('scroll', function(){
+    if(window.scrollY > 600){ topBtn.classList.add('ee-show'); }
+    else{ topBtn.classList.remove('ee-show'); }
+  }, {passive:true});
+  topBtn.addEventListener('click', function(){
+    window.scrollTo({top:0, behavior:'smooth'});
+  });
+
+  /* 点击公告条中的锚点后短暂高亮目标区块 */
+  document.querySelectorAll('.ee-notice-list a, .ee-nav a').forEach(function(a){
+    a.addEventListener('click', function(){
+      var id = a.getAttribute('href');
+      if(!id || id.charAt(0) !== '#') return;
+      var target = document.querySelector(id);
+      if(!target) return;
+      target.style.transition = 'box-shadow .4s';
+      target.style.boxShadow = 'inset 0 0 0 1px rgba(94,234,212,.35)';
+      setTimeout(function(){
+        target.style.boxShadow = 'none';
+      }, 1200);
+    });
+  });
+})();
+</script>
+</body>
+                                                              </html>
